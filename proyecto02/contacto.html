@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Hace referencia a la parte superior</h1>
+      <img src="images/logo.jpeg" alt="Logo Marca">
+      <div class="clear"></div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h2>Contáctanos</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fuga earum odio, numquam necessitatibus maxime repudiandae ipsum.</p>
+      <form>
+        <h3>Formulario de Registro</h3>
+		    <p>Los campos que tienen un * son requeridos para el envio del formulario</p>
+
+        <!-- <label for="nombre">*Nombre:</label> -->
+        <input type="text" id="nombre"  placeholder="Nombre" required>
+        <label for="Apellido">*Apellidos:</label>
+        <input type="text" id="Apellido" value="Apellido" required><br><br>
+        <label for="nacion">*Nacionalidad:</label>
+        <input type="text" id="nacion" value="Colombiano" required><br><br>
+        <label for="edad">*Edad:</label>
+        <input type="number" id="edad" required><br><br>
+        <label for="correo">*Correo Electrónico:</label>
+        <input type="email" id="correo" required><br><br>
+        <label for="contra">*Contraseña:</label>
+        <input type="password" id="contra" required><br><br>
+        <label for="telefono">*Celular:</label>
+        <input type="tel" id="telefono" required><br><br>
+        <label for="fecha">*Fecha de Nacimiento:</label>
+        <input type="date" id="fecha" required><br><br>
+
+        <label>Tipo de conexión</label>
+        <div>
+          <input type="radio" name="conect" id="internet"> 
+          <label for="internet">Internet</label>
+          <input type="radio" name="conect" id="whatsapp"> 
+          <label for="whatsapp">Whatsapp</label>
+          <input type="radio" name="conect" id="Celular"> 
+          <label for="Celular">Celular</label>
+        </div><br><br>
+
+        <label>Dispositivo de conexión</label>
+        <div>
+          <input type="checkbox" name="check" id="PC"> 
+          <label for="PC">PC</label>
+          <input type="checkbox" name="check" id="celular"> 
+          <label for="celular">Celular</label>
+        </div><br><br>
+
+        <select name="ciudad">
+          <option value="armenia">Armenia</option> 
+          <option value="manizales">Manizales</option>
+          <option value="pereira">Pereira</option>
+        </select><br><br>
+
+        <select>
+          <optgroup label="Quindío">
+              <option value="valor1">Armenia</option>
+              <option value="valor3">Carlarcá</option>
+              <option value="valor5">Circasia</option>
+          </optgroup>
+          <optgroup label="Risaralda">
+              <option value="valor2">Pereira</option>
+              <option value="valor4">Dosquebradas</option>
+              <option value="valor6">xxx</option>
+          </optgroup>
+        </select><br><br>
+
+        <label for="mensaje">Escriba su mensaje:</label><br>
+		    <textarea id="mensaje"></textarea><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        <button name="button">Otro botón</button>
+      </form>
+    </section>
+    <footer>
+      <p class="rep">Todos los derechos reservados. &copy; 2022</p>
+    </footer>
+  </main>
+</body>
+</html>
